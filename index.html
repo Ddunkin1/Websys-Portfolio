@@ -3,53 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>James Anoc Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>James Anoc - Portfolio</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-</head>
-<body style="font-family:Verdana;">
-
-<div style="background-color:#f1f1f1;padding:15px;">
-  <h1>Welcome to my Portfolio</h1>
-</div>
-
-<div style="overflow:auto">
-  <div class="menu">
-    <div class="menuitem">
-      <li><a href="/home.html">Home</a></li>
-      <li><a href="/about.html">About</a></li>
-      <li><a href="/contact.html">Contact</a></li>
-    </div>
-   
-  </div>
-
-  <div class="main">
-    <div class="card">
-      <img src="https://static.vecteezy.com/system/resources/previews/026/631/405/non_2x/human-icon-symbol-design-illustration-vector.jpg" style="width:50%">
-    <div class="container">
-        <h4><b>James Anoc</b></h4> 
-    <p>Network Engineer</p>
-    </div>
-  </div>
-    <p>Hi, I'm James Anoc, a software developer with a passion for creating innovative solutions. I have experience in various programming languages and frameworks, and I enjoy working on projects that challenge me to learn and grow.</p>
-    <h1>About Me</h1>
-  </div>
-
-  
-
-  <div class="right">
-    <h2>What?</h2>
-    <p>Cinque Terre comprises five villages: Monterosso, Vernazza, Corniglia, Manarola, and Riomaggiore.</p>
-    <h2>Where?</h2>
-    <p>On the northwest cost of the Italian Riviera, north of the city La Spezia.</p>
-    <h2>Price?</h2>
-    <p>The Walk is free!</p>
-  </div>
-</div>
+    <nav class="navbar">
 
 
-<div style="background-color:#f1f1f1;text-align:center;padding:10px;margin-top:7px;font-size:12px;"> This web page is a part of a demonstration of fluid web design made by w3schools.com. Resize the browser window to see the content respond to the resizing.</div>
+        <div class="nav-container">
+            <div class="logo">James Anoc</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="https://github.com/Ddunkin1" class="nav-link" target="_blank"><i class="fab fa-github"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to my Portfolio</h1>
+            <p>Software Developer & Network Engineer</p>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="profile-card">
+                <img src="/images/profile.jpg" alt="Profile">
+                <h2>James Anoc</h2>
+                <p class="role">Network Engineer</p>
+            </div>
+            <div class="about-content">
+                <h2>About Me</h2>
+                <p>Hi, I'm James Anoc, a software developer with a passion for creating innovative solutions. I have experience in various programming languages and frameworks, and I enjoy working on projects that challenge me to learn and grow.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Web Application</h3>
+                    <p>A full-stack web application built with modern technologies and best practices.</p>
+                    <a href="#" class="project-link">Learn More</a>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Network Solutions</h3>
+                    <p>Enterprise network design and implementation for optimized performance.</p>
+                    <a href="#" class="project-link">Learn More</a>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile App</h3>
+                    <p>Cross-platform mobile application with responsive design and smooth UX.</p>
+                    <a href="#" class="project-link">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p>I'd love to hear from you. Feel free to reach out for collaboration or inquiries.</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p><a href="mailto:james@example.com">nelvi.anoc@urios.edu.ph</a></p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <h3>Phone</h3>
+                    <p><a href="tel:+1234567890">09682055758</a></p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Location</h3>
+                    <p>Butuan City, Philippines</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 James Anoc. All rights reserved.</p>
+    </footer>
+
+    <script src="./script.js"></script>
 
 </body>
 
